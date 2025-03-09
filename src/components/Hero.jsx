@@ -17,18 +17,18 @@ const Hero = () => {
     <div className="border-b border-neutral-900 pb-4 lg:mb-35">
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2">
-          <div className="flex flex-col items-center lg:items-start">
+          <div className="flex flex-col items-start">
             <motion.h1
               variants={container(0)}
               initial="hidden"
               animate="visible"
-              className="pb-16 text-5xl font-bold tracking-tight lg:mt-16 lg:text-7xl"
+              className="pb-5 text-5xl font-bold tracking-tight lg:mt-16 lg:text-7xl"
             >
               <h6 className="pl-1 text-3xl bg-gradient-to-r from-purple-300 via-slate-500 to-purple-500 bg-clip-text tracking-tight text-transparent">
                 I am
               </h6>
               <span className="bg-gradient-to-r from-yellow-300 via-slate-500 to-yellow-500 bg-clip-text tracking-tight text-transparent pr-3 pb-16 text-5xl font-bold md:mt-16 lg:text-7xl">
-                Harikrishnan s
+                Harikrishnan
               </span>
               <span className="animate-wave text-5xl lg:text-7xl absolute">
                 {" "}
@@ -49,7 +49,7 @@ const Hero = () => {
                   2000,
                   "Web Developer",
                   2000,
-                  "Mobile App Developer",
+                  "App Developer",
                   2000,
                 ]}
                 cursor={true}
