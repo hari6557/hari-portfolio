@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "hari-portfolio-9c320",
     "public": "dist",
     "ignore": [
       "firebase.json",
