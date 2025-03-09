@@ -1,9 +1,8 @@
 import React from "react";
-import {
-  HERO_CONTENT,
-} from "../constants";
+import { HERO_CONTENT } from "../constants";
 import profileImage from "../assets/Hari.png";
 import { motion } from "framer-motion";
+import { TypeAnimation } from "react-type-animation";
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -14,7 +13,6 @@ const container = (delay) => ({
   },
 });
 const Hero = () => {
-
   return (
     <div className="border-b border-neutral-900 pb-4 lg:mb-35">
       <div className="flex flex-wrap">
@@ -26,18 +24,40 @@ const Hero = () => {
               animate="visible"
               className="pb-16 text-5xl font-bold tracking-tight lg:mt-16 lg:text-7xl"
             >
-            <span className="bg-gradient-to-r from-yellow-300 via-slate-500 to-yellow-500 bg-clip-text tracking-tight text-transparent pr-3 pb-16 text-5xl font-bold md:mt-16 lg:text-7xl">
-              I am Hari
-            </span>
-            <span className="animate-wave text-5xl lg:text-7xl absolute"> 👋</span>
+              <h6 className="pl-1 text-3xl bg-gradient-to-r from-purple-300 via-slate-500 to-purple-500 bg-clip-text tracking-tight text-transparent">
+                I am
+              </h6>
+              <span className="bg-gradient-to-r from-yellow-300 via-slate-500 to-yellow-500 bg-clip-text tracking-tight text-transparent pr-3 pb-16 text-5xl font-bold md:mt-16 lg:text-7xl">
+                Harikrishnan s
+              </span>
+              <span className="animate-wave text-5xl lg:text-7xl absolute">
+                {" "}
+                👋
+              </span>
             </motion.h1>
             <motion.span
               variants={container(0.5)}
               initial="hidden"
               animate="visible"
-              className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"
+              className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent animate-typing"
             >
-              Frontend Developer
+              <TypeAnimation
+                sequence={[
+                  "Frontend Developer",
+                  2000,
+                  "Software Developer",
+                  2000,
+                  "Web Developer",
+                  2000,
+                  "Mobile App Developer",
+                  2000,
+                ]}
+                cursor={true}
+                wrapper="span"
+                speed={5}
+                style={{caretColor: "red"}}
+                repeat={Infinity}
+              />
             </motion.span>
             <motion.p
               variants={container(1)}
