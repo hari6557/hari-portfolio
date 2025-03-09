@@ -30,7 +30,7 @@ const Contact = () => {
         >
           {CONTACT.phoneNo}
         </motion.p>
-        <a href="#" className="underline">
+        <a href="#" className="underline hover:text-cyan-600">
           {CONTACT.email}
         </a>
       </div>
