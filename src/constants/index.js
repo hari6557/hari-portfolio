@@ -75,5 +75,5 @@ export const PROJECTS = [
 export const CONTACT = {
   address: "Sreevilasam Mannar PO Mannar, Alappuzha, 689622, Kerala, India ",
   phoneNo: "+91 8078968311",
-  email: "harikrishnansajikumar123@gmail.com",
+  email: "codebyharikrishnan@gmail.com",
 };
